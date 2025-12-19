@@ -6,6 +6,7 @@ export default function App() {
         <div>2</div>
         <div>3</div>
       </div>
+      <p className="message">Hello</p>
     </div>
   );
 }
