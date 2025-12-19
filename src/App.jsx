@@ -20,6 +20,7 @@ export default function App() {
             padding: "10px 20px",
             borderRadius: "5px",
           }}
+          onClick={() => alert("Previous")}
         >
           Previous
         </button>
@@ -31,6 +32,7 @@ export default function App() {
             padding: "10px 20px",
             borderRadius: "5px",
           }}
+          onClick={() => alert("Next")}
         >
           Previous
         </button>
