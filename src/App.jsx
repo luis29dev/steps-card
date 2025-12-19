@@ -8,8 +8,28 @@ export default function App() {
       </div>
       <p className="message">Hello</p>
       <div className="buttons">
-        <button>Previous</button>
-        <button>Next</button>
+        <button
+          style={{
+            backgroundColor: "#7950f2",
+            color: "white",
+            border: "none",
+            padding: "10px 20px",
+            borderRadius: "5px",
+          }}
+        >
+          Previous
+        </button>
+        <button
+          style={{
+            backgroundColor: "#7950f2",
+            color: "white",
+            border: "none",
+            padding: "10px 20px",
+            borderRadius: "5px",
+          }}
+        >
+          Previous
+        </button>
       </div>
     </div>
   );
