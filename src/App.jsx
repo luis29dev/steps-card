@@ -1,6 +1,15 @@
 import messages from "./db/data";
 export default function App() {
   const step = 1;
+
+  function handlePrevious() {
+    alert("Previous");
+  }
+
+  function handleNext() {
+    alert("Next");
+  }
+
   return (
     <div className="steps">
       <div className="numbers">
@@ -20,7 +29,7 @@ export default function App() {
             padding: "10px 20px",
             borderRadius: "5px",
           }}
-          onClick={() => alert("Previous")}
+          onClick={handlePrevious}
         >
           Previous
         </button>
@@ -32,9 +41,9 @@ export default function App() {
             padding: "10px 20px",
             borderRadius: "5px",
           }}
-          onClick={() => alert("Next")}
+          onClick={handleNext}
         >
-          Previous
+          Next
         </button>
       </div>
     </div>
