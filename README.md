@@ -1,4 +1,4 @@
-# Pizza Menu 🍕
+# Steps-Card
 
 A React practice project that displays a Steps card using State and Event Handlers.
 
