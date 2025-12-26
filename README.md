@@ -1,16 +1,84 @@
-# React + Vite
+# Pizza Menu 🍕
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React practice project that displays a Steps card using State and Event Handlers.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays steps with previous and next buttons
+- Manages current step using React state
+- Buttons are disabled at the first and last steps
+- Simple and clean UI
+- The card can be opened and closed
+- Data is loaded from a local file
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS (global styles and inline styles)
+- Node.js (v22.21.1)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/luis29dev/pizza-menu.git
+
+cd steps
+
+npm install
+```
+
+## Run the project locally
+
+```bash
+npm run dev
+```
+
+The app will be available at the local development URL shown in your terminal.
+
+## Project Structure
+
+```bash
+public/
+  pizzas/            # Pizza images
+src/
+  db/
+    data.js           # Local JSON data for steps
+  index.css           # Global styles
+  main.jsx
+  App.jsx
+```
+
+## How It Works
+
+- Steps data is imported from a local JSON file.
+- The steps are rendered dynamically by mapping over the steps data.
+- The current step is managed using React's useState hook.
+- Event handlers are used to navigate between steps and to open/close the card.
+- Buttons are conditionally disabled based on the current step.
+
+## What I Learned
+
+- JSX syntax and rules
+- Managing state with useState
+- Handling events in React
+- Conditional rendering and disabling of buttons
+
+## Roadmap / Next Steps
+
+- Add animations for step transitions
+- change color of the buttons when disabled
+- Make the card draggable
+- Add more steps and content
+
+## Scripts
+
+`npm run dev` — starts the development server
