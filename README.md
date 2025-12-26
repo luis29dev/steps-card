@@ -29,7 +29,7 @@ A React practice project that displays a Steps card using State and Event Handle
 ### Installation
 
 ```bash
-git clone https://github.com/luis29dev/pizza-menu.git
+git clone https://github.com/luis29dev/steps-card.git
 
 cd steps
 
