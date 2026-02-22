@@ -34,16 +34,16 @@ export default function App() {
               bgColor={"#7950f2"}
               textColor={"white"}
               handlerClick={handlePrevious}
-              text={"Previous"}
-              emoji={step > 1 ? "👈" : ""}
-            />
+            >
+              {step > 1 ? "👈" : ""} Previous
+            </Button>
             <Button
               bgColor={"#7950f2"}
               textColor={"white"}
               handlerClick={handleNext}
-              text={"Next"}
-              emoji={step < 3 ? "👉" : ""}
-            />
+            >
+              Next {step < 3 ? "👉" : ""}
+            </Button>
           </div>
         </div>
       )}

@@ -1,10 +1,4 @@
-export default function Button({
-  textColor,
-  bgColor,
-  handlerClick,
-  text,
-  emoji,
-}) {
+export default function Button({ textColor, bgColor, handlerClick, children }) {
   return (
     <button
       style={{
@@ -16,8 +10,7 @@ export default function Button({
       }}
       onClick={handlerClick}
     >
-      <span>{emoji}</span>
-      {text}
+      {children}
     </button>
   );
 }
