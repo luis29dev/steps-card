@@ -1,5 +1,6 @@
 import { useState } from "react";
 import messages from "./db/data";
+import Button from "./components/Button";
 
 export default function App() {
   const [step, setStep] = useState(1);
@@ -29,30 +30,20 @@ export default function App() {
             Step {step}: {messages[step - 1]}
           </p>
           <div className="buttons">
-            <button
-              style={{
-                backgroundColor: "#7950f2",
-                color: "white",
-                border: "none",
-                padding: "10px 20px",
-                borderRadius: "5px",
-              }}
-              onClick={handlePrevious}
-            >
-              Previous
-            </button>
-            <button
-              style={{
-                backgroundColor: "#7950f2",
-                color: "white",
-                border: "none",
-                padding: "10px 20px",
-                borderRadius: "5px",
-              }}
-              onClick={handleNext}
-            >
-              Next
-            </button>
+            <Button
+              bgColor={"#7950f2"}
+              textColor={"white"}
+              handlerClick={handlePrevious}
+              text={"Previous"}
+              emoji={step > 1 ? "👈" : ""}
+            />
+            <Button
+              bgColor={"#7950f2"}
+              textColor={"white"}
+              handlerClick={handleNext}
+              text={"Next"}
+              emoji={step < 3 ? "👉" : ""}
+            />
           </div>
         </div>
       )}
